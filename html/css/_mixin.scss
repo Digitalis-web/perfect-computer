@@ -1,0 +1,56 @@
+@import "variabels";
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative){
+  position: $position;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin center-align($position: relative){
+  position: $position;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+}
+
+//transision
+@mixin transition ($prop: all, $time: 2s, $ease: linear) {
+  -webkit-transition: $prop $time $ease;
+  -moz-transition: $prop $time $ease;
+  -o-transition: $prop $time $ease;
+  transition: $prop $time $ease;
+}
+
+//backround size
+@mixin background($size: cover){
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+//a shadow for the top of a section
+@mixin top_box_shadow($hori : 0px, $vert :0px, $Blur: 0px, $Spread: 0px, $color: rgba(0,0,0,0.20)){
+  -webkit-box-shadow: $hori $vert $Blur $Spread $color;
+  -moz-box-shadow: $hori $vert $Blur $Spread $color;
+  box-shadow: $hori $vert $Blur $Spread $color;
+}
+
+@mixin border_radius($size: 0px){
+  -webkit-border-radius:$size;
+  -moz-border-radius: $size;
+  -ms-border-radius: $size;
+  border-radius:$size;
+}

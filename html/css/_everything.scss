@@ -1,0 +1,82 @@
+@import "mixin";
+@import "variabels";
+
+//wrapper styling
+.wrapper {
+  @extend .nopm;
+  @extend .tole;
+  background: $color3;
+  z-index: 1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*Styling for the entire html file*/
+html {
+  @extend .wrapper;
+}
+
+/*Styling for the body*/
+body {
+  @extend .wrapper;
+  font-family: 'Lato', sans-serif;
+}
+
+//section style
+section {
+  @extend .nopm;
+  @extend .tole;
+  z-index: 2;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+h1,h2,h3,h4{
+
+}
+
+p{
+
+}
+
+a{
+
+}
+
+//no margin
+.nom{
+  margin: $no;
+}
+//no padding
+.nop{
+  padding: $no;
+}
+
+//no padding no margin
+.nopm {
+  @extend .nop;
+  @extend .nom;
+}
+
+//top left
+.tole {
+  top: $no;
+  left: $no;
+}
+
+//full with
+.fullw{
+  width: $full !important;
+}
+
+//full height
+.fullh{
+  height: $full !important;
+}
+
+//full height and full with combined
+.full_size{
+  @extend .fullh;
+  @extend .fullw;
+}
