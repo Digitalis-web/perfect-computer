@@ -1,11 +1,26 @@
 {
-  "name": "name",
+  "name": "mall",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "mall för digitalis hemsidor",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "digitalis",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-uncss-sp": "0.0.1",
+    "gulp-watch": "^4.3.11",
+    "browser-sync": "^2.18.8"
+  }
 }
