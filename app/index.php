@@ -7,11 +7,7 @@
 </head>
 
 <body class="wrapper col-xs-12" id="page-top" class="index">
-
-<?php
-include "partials/nav.php";
-
-?>
+<?php include "partials/nav.php"?>
 
 <header>
 
@@ -21,8 +17,6 @@ include "partials/nav.php";
 
 </section>
 
-<?php
-include "partials/footer.php";
-?>
+<?php include "partials/footer.php" ?>
 </body>
 </html>
