@@ -64,9 +64,9 @@ g.task('concat-js',function () {
 
 //create impots.js from all js files in imporst folder
 g.task('concat-js',function () {
-    return g.src('app/js/imports/*.js')
+    return g.src('app/js/third_party/*.js')
         .pipe(plumber())
-        .pipe(concat('import.js'))
+        .pipe(concat('third_party.js'))
         .pipe(g.dest('app/js'))
 });
 
