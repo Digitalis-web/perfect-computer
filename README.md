@@ -1,2 +1,2 @@
-# Mall
-Mall för alla digitalis projekt
+# computer finder
+A web app finding the perfect computer
