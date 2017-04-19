@@ -1,0 +1,65 @@
+@import "../everything";
+
+.footer{
+  background: $color2;
+  height: 50vh;
+  z-index: 10;
+
+  .footer-container{
+    height: 42vh;
+    .footer_left_container{
+      a{
+        &:hover{
+
+        }
+      }
+    }
+    .footer_mid_container{
+      p{
+        font-size: 1.5vw;
+        font-weight:600;
+
+      }
+    }
+    .footer_right_container{
+      p{
+        font-size: 1.5vw;
+        font-weight:600;
+
+      }
+      a{
+        font-size: 2vw;
+        text-align: center;
+        text-decoration: none;
+        //border-radius: 100%;
+        margin-right:0.4vw;
+        color: $color1;
+        i {
+          height: 6vh;
+          width: 6vh;
+          line-height: 6vh;
+          background: $color3;
+          border-radius: 50%;
+
+          &:hover {
+            background: $color3*2;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_bot_container{
+    height: 8vh;
+    p{
+      color: $color3;
+      font-size: 1.5vw;
+    }
+    a{
+      float: right !important;
+      margin-right:2vh;
+      color: $white;
+      font-size: 1vw;
+    }
+  }
+}

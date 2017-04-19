@@ -55,7 +55,7 @@ g.task('css-build', ['compile-sass'], function() {
 });
 
 //creating app.js from all js files in the app folder
-g.task('concat-jss',function () {
+g.task('concat-js-app',function () {
     return g.src('app/js/app/*.js)')
         .pipe(plumber())
         .pipe(concat('app.js'))
@@ -63,7 +63,7 @@ g.task('concat-jss',function () {
 });
 
 //create impots.js from all js files in imporst folder
-g.task('concat-js', ['concat-jss'] ,function () {
+g.task('concat-js-third_party' ,function () {
     return g.src('app/js/third_party/*.js')
         .pipe(plumber())
         .pipe(concat('third_party.js'))
@@ -71,7 +71,7 @@ g.task('concat-js', ['concat-jss'] ,function () {
 });
 
 //uglify all flies
-g.task('js-build', ['concat-js','concat-js'] , function () {
+g.task('js-build', ['concat-js-app','concat-js-third_party'] , function () {
     return g.src('app/js/*.js')
         .pipe(plumber())
         .pipe(uglify())
@@ -128,8 +128,8 @@ g.task('connect-php', function () {
         'app/img/**/*'
     ]).on('change', reload);
 
-    g.watch('app/scss/*scss',     ['compile-sass']);
-    g.watch('app/js/**/*.js',     ['concat-js']);
+    g.watch('app/scss/**/*',      ['compile-sass']);
+    g.watch('app/js/**/*.js',     ['concat-js-third_party','concat-js-app']);
 
 });
 
@@ -138,4 +138,4 @@ g.task('build',['clean'],function () {
 });
 
 //run css tole to compile css
-g.task('default', ['compile-sass', 'concat-js']);
+g.task('default', ['compile-sass', 'concat-js-third_party','concat-js-app', 'connect-php']);

@@ -1,7 +1,7 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900i);
 .wrapper, html, body {
-  background: #ffffff;
+  background: #454545;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -34,7 +34,7 @@ section {
   height: 100% !important; }
 
 .wrapper, html, body {
-  background: #ffffff;
+  background: #454545;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -66,8 +66,45 @@ section {
 .fullh, .full_size {
   height: 100% !important; }
 
+.footer {
+  background: #1e1e1e;
+  height: 50vh;
+  z-index: 10; }
+  .footer .footer-container {
+    height: 42vh; }
+    .footer .footer-container .footer_mid_container p {
+      font-size: 1.5vw;
+      font-weight: 600; }
+    .footer .footer-container .footer_right_container p {
+      font-size: 1.5vw;
+      font-weight: 600; }
+    .footer .footer-container .footer_right_container a {
+      font-size: 2vw;
+      text-align: center;
+      text-decoration: none;
+      margin-right: 0.4vw;
+      color: #2b2b2b; }
+      .footer .footer-container .footer_right_container a i {
+        height: 6vh;
+        width: 6vh;
+        line-height: 6vh;
+        background: #454545;
+        border-radius: 50%; }
+        .footer .footer-container .footer_right_container a i:hover {
+          background: #8a8a8a; }
+  .footer .footer_bot_container {
+    height: 8vh; }
+    .footer .footer_bot_container p {
+      color: #454545;
+      font-size: 1.5vw; }
+    .footer .footer_bot_container a {
+      float: right !important;
+      margin-right: 2vh;
+      color: #ffffff;
+      font-size: 1vw; }
+
 .wrapper, html, body {
-  background: #ffffff;
+  background: #454545;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }

@@ -1,10 +1,10 @@
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
-    <meta name="description" content="Digitalis"/>
     <meta name="keywords" content="webdesing, creative design"/>
-    <meta name="author" content="Digital Internet Solutions">
+    <meta name="author" content="ISON Internet Solutions">
 
     <!--css-->
     <link href="css/app.css" rel="stylesheet">
@@ -32,7 +32,6 @@
             crossorigin="anonymous"></script>
     <!--icon-->
     <link rel="icon" href="img/logo/favicon.png">
-
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
